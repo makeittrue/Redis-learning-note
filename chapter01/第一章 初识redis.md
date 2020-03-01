@@ -66,10 +66,10 @@ NoSQL最初指的是一个没有SQL功能，轻量级的，开源的关系型数
 * 面向可扩展性的分布式数据库：普通的关系型数据库都是以行为单位来存储数据的，擅长以行为单位的读入处理，比如特定条件数据的获取。因此，关系型数据可也被称为面向行的数据库。相反，面向列的数据库都是以列为单位来存储数据的，擅长以列为单位读入数据。该类数据库想解决的问题就是传统数据库存在可扩展性上的缺陷，该类数据库可以适应数据量的增加以及数据结构的变化，将数据存储在记录中，能够容纳大量动态类。由于列名和记录键不是固定的，并且由于记录可能有数十亿列，因此可扩展性存储可以看作是二位键值存储。典型代表为Cassandra、HBase、Microsoft Azure Cosmos DB、Datastax Enterprise、Accumulo。
 * 面型搜索数据内容的搜索引擎数据库：专门用于搜索内容。主要是用于海量数据进行接近实时的处理和分析处理，可用于机器学习和数据挖掘。典型代表为Elasticsearch、Splunk、Solr、MarkLogic、Sphinx。
 
-![1721334-20190702155425039-2038506966](2BCD5FC13C5F45CDBB3C8538C43CE759)
-![1721334-20190702155519820-338354367](CF06BB7BA64E4E74A9CE84AD821410F1)
-![1721334-20190702155535759-490036526](999EF14FC8194069ABD8041E24BF7E6A)
-![1721334-20190702155543217-1929236480](E99C1FEB2B6947ED8F83EF715EBE2E8A)
+![fig.1](https://github.com/makeittrue/Redis-learning-note/blob/master/images/chapter01/1721334-20190702155425039-2038506966.png)
+![fig.2](https://github.com/makeittrue/Redis-learning-note/blob/master/images/chapter01/1721334-20190702155519820-338354367.png)
+![fig.3](https://github.com/makeittrue/Redis-learning-note/blob/master/images/chapter01/1721334-20190702155535759-490036526.png)
+![fig.4](https://github.com/makeittrue/Redis-learning-note/blob/master/images/chapter01/1721334-20190702155543217-1929236480.png)
 
 ***优点***
 
