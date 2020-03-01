@@ -105,3 +105,47 @@ P(Partition tolerance)分区容错性：分区容错性是指分布式系统在�
 可以使代码更简短、更易懂、更易维护，而且还可以使代码的运行速度更快。<br>
 可以避免写入不必要的临时数据，免去了对临时数据进行扫描或者删除的麻烦，并最终改善程序的性能。
 
+**1.2 Redis数据结构简介**
+
+Redis可以存储键与5种不同数据结构类型之间的映射，这5种数据结构类型分别为STRING(字符串)、LIST（列表）、SET（集合）、HASH(散列)和ZSET（有序集合）。有一部分Redis命令对于这5中结构都是通用的，如DEL、TYPE、RENAME等；但也有一部分Redis命令只能对特定的一种或者两种结构使用。
+
+***1.2.1 字符串***
+
+结构如图所示<br>
+![image](https://github.com/makeittrue/Redis-learning-note/blob/master/images/chapter01/clipboard.png)
+
+字符串命令<br>
+![image](https://github.com/makeittrue/Redis-learning-note/blob/master/images/chapter01/stringcmd.png)
+
+redis字符串命令<br>
+![image](https://github.com/makeittrue/Redis-learning-note/blob/master/images/chapter01/rediscmd01.jpg)
+
+***1.2.2 列表***
+
+一个列表结构可以有序地存储多个字符串，和表示字符串时使用的方法一样。<br>
+结构示例<br>
+
+![image](https://github.com/makeittrue/Redis-learning-note/blob/master/images/chapter01/list01.jpg)
+
+列表命令<br>
+
+![image](https://github.com/makeittrue/Redis-learning-note/blob/master/images/chapter01/list02.jpg)
+
+代码示例<br>
+
+![image](https://github.com/makeittrue/Redis-learning-note/blob/master/images/chapter01/list03.jpg)
+
+***1.2.3 集合***
+
+Redis的集合和列表都可以存储多个字符串，它们之间的不同在于，列表可以存储多个相同的字符串，而集合则通过使用散列表来保证自己存储的每个字符串都是各不相同的（这些散列表只有键，但没有与键相关联的值）。<br>
+结构示例<br>
+
+![image](https://github.com/makeittrue/Redis-learning-note/blob/master/images/chapter01/set01.jpg)
+
+代码示例<br>
+
+![image](https://github.com/makeittrue/Redis-learning-note/blob/master/images/chapter01/set02.jpg)
+
+>这里还遇到了一些问题，由于对于该数据库的不了解，发生了键值类型冲突的问题。一个键名只能对应一种类型如果命令敲错了的话就要重置这个类型。<br>
+代码为：<br>
+    del key-name
