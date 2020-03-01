@@ -140,11 +140,11 @@ redis字符串命令<br>
 Redis的集合和列表都可以存储多个字符串，它们之间的不同在于，列表可以存储多个相同的字符串，而集合则通过使用散列表来保证自己存储的每个字符串都是各不相同的（这些散列表只有键，但没有与键相关联的值）。<br>
 结构示例<br>
 
-![image](https://github.com/makeittrue/Redis-learning-note/blob/master/images/chapter01/set01.jpg)
+![image](https://github.com/makeittrue/Redis-learning-note/blob/master/images/chapter01/set01.png)
 
 代码示例<br>
 
-![image](https://github.com/makeittrue/Redis-learning-note/blob/master/images/chapter01/set02.jpg)
+![image](https://github.com/makeittrue/Redis-learning-note/blob/master/images/chapter01/set02.png)
 
 >这里还遇到了一些问题，由于对于该数据库的不了解，发生了键值类型冲突的问题。一个键名只能对应一种类型如果命令敲错了的话就要重置这个类型。<br>
 代码为：<br>
