@@ -146,6 +146,10 @@ Redis的集合和列表都可以存储多个字符串，它们之间的不同在
 
 ![image](https://github.com/makeittrue/Redis-learning-note/blob/master/images/chapter01/set02.png)
 
+集合命令<br>
+
+![image](https://github.com/makeittrue/Redis-learning-note/blob/master/images/chapter01/set03.png)
+
 >这里还遇到了一些问题，由于对于该数据库的不了解，发生了键值类型冲突的问题。一个键名只能对应一种类型如果命令敲错了的话就要重置这个类型。<br>
 代码为：<br>
     del key-name
